@@ -1,0 +1,40 @@
+{
+  "name": "imageprocessingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/**.ts'",
+    "build": "npx tsc",
+    "prettier": "prettier --config .prettierrc.json 'src/**/**.ts' --write",
+    "jasmine": "jasmine",
+    "start": "nodemon src/index.ts",
+    "test": "npm run build && npm run jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jasmine": "^4.3.5",
+    "@types/node": "^20.4.2",
+    "@types/prettier": "^2.7.3",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "image-size": "^1.0.2",
+    "jasmine": "^5.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sharp": "^0.32.3"
+  }
+}
